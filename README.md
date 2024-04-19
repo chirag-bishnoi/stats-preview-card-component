@@ -16,7 +16,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Click Here!](https://your-solution-url.com)
+- Solution URL: [Click Here!](https://chirag-bishnoi.github.io/stats-preview-card-component/)
 
 
 ### Built with
