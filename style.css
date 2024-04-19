@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    background-color: hsl(233, 47%, 7%);
+}
+
+main {
+    max-width: 1300px;
+    display: flex;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.flex-item {
+    flex: 1 1 50%;
+}
+
+article {
+    color: hsla(0, 0%, 100%, 0.75);
+    padding: min(6vw, 90px);
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(244, 38%, 16%);
+}
+
+h1 {
+    font-size: clamp(1.5rem, 3vw, 2.8rem);
+    margin-bottom: 2rem;
+}
+
+h1 span {
+    color: hsl(277, 64%, 61%);
+}
+
+h1 + p {
+    line-height: 1.6;
+}
+
+h1,h4 {
+    color: hsl(0, 0%, 100%);
+}
+
+h4 {
+    font-size: clamp(1.2rem, 2vw, 1.68rem); 
+}
+
+section {
+    background-color: hsl(277, 64%, 61%);;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: auto;
+}
+
+.container p {
+    color: hsla(0, 0%, 100%, 0.6);
+    text-transform: uppercase;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: multiply;
+}
+
+/* MEDIA QUERIES */
+
+@media(max-width:550px){
+    body {font-size: 15px;}
+
+    main {
+        flex-direction: column-reverse;
+        max-width: 90%;
+        margin-block: auto;
+        margin-top: 3rem;
+    }
+
+    img{
+        height: auto;
+    }
+
+    article{
+        text-align: center;
+    }
+
+    article > p {
+        margin-bottom: 2rem;
+    }
+
+    .container{
+        flex-direction: column;
+        gap: 1.4rem;
+    }
+}
